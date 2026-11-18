@@ -1,0 +1,17 @@
+.DS_Store
+/Eros.xcodeproj/
+/build/
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+/Tools/FixtureCapture/capture.env
+/.fixture-secrets.local*
+*.ipa
+*.xcarchive
+# Personal preference pages: captured and sanitized, but kept local-only (user decision, 2026-11-04).
+# local/.gitkeep is tracked (force-added) so the EHFixtures target can always exclude local/.
+/Packages/ErosKit/Tests/Fixtures/local/
+/Packages/ErosKit/Tests/Fixtures/manifest.local.json
+# Design notes, plans and reviews are kept outside this repository.
+/docs/

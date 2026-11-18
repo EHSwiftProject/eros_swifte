@@ -1,0 +1,150 @@
+name: Eros
+
+options:
+  deploymentTarget:
+    iOS: "27.0"
+  developmentLanguage: en
+
+packages:
+  ErosKit:
+    path: Packages/ErosKit
+  Nuke:
+    url: https://github.com/kean/Nuke
+    exactVersion: 13.2.0
+
+targets:
+  Eros:
+    type: application
+    platform: iOS
+    sources: [App]
+    configFiles:
+      Debug: Config/App.xcconfig
+      Release: Config/App.xcconfig
+    # The keys the build settings cannot give: the eros:// scheme (entry E2) and the one-window scene manifest (below).
+    # XcodeGen writes Config/Info.plist (checked in) with defaults of its own too, versions 1.0 and 1 among them, so
+    # both versions are taken from the build settings here. Xcode merges the generated keys (GENERATE_INFOPLIST_FILE,
+    # INFOPLIST_KEY_*) into this file.
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleURLTypes:
+          - CFBundleURLName: proj.eros.swifte
+            CFBundleTypeRole: Viewer
+            CFBundleURLSchemes: [eros]
+        # One window only (user decision 2026-11-17): the app's router, alerts and clipboard offer are the app's, so
+        # a second iPad window would mirror the first. The manifest Xcode generated (UIApplicationSceneManifest
+        # _Generation) allowed multiple scenes and has no key of its own to turn that off, so it is written here, with
+        # the empty scene configurations the generated one had (SwiftUI's WindowGroup makes the scene).
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: proj.eros.swifte
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Eros-SE
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        # NO: the manifest is in `info` above (one window).
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: NO
+        # Every orientation on the iPad (iPadOS asks for all of them; without the keys XCTest warns "Support for all
+        # orientations will soon be required"), the iPhone's three as in Xcode's template (no upside down). Both the
+        # Duo's landscape grips are among them, as they turned before.
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: >-
+          UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown
+          UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: >-
+          UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        # The app only uses the system's HTTPS, which is exempt; declaring it skips the export compliance question on
+        # every App Store Connect upload.
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        # App/AppIcon.icon (Icon Composer). XcodeGen's iOS preset sets the same name; stated here because App Store
+        # Connect rejects an upload without an icon.
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "6.0"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        # Simulator builds are ad-hoc signed (identity "-", no developer account) so the app can use the Keychain;
+        # user decision, 2026-11-06. Set here, not in Config/App.xcconfig: XcodeGen's target-level preset
+        # (CODE_SIGN_IDENTITY = "iPhone Developer") overrides the xcconfig. Release IPAs are still built unsigned,
+        # see docs/packaging.md.
+        "CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "-"
+      configs:
+        Debug:
+          # The "Copy replay fixtures" phase copies a directory tree from the package's Tests/Fixtures, which a
+          # sandboxed script cannot read without listing every file. Debug only: Release copies nothing and keeps
+          # its setting.
+          ENABLE_USER_SCRIPT_SANDBOXING: NO
+    postCompileScripts:
+      # Debug builds carry the checked-in fixtures for UI test replay (FixtureReplay); other configurations remove
+      # them. Code signing comes after every build phase, so the copied files are signed with the app.
+      - name: Copy replay fixtures (Debug only)
+        script: '"$SRCROOT/scripts/copy-replay-fixtures.sh"'
+        basedOnDependencyAnalysis: false
+    dependencies:
+      - package: ErosKit
+        product: EHModels
+      - package: ErosKit
+        product: EHParsing
+      - package: ErosKit
+        product: EHNetwork
+      - package: ErosKit
+        product: EHStore
+      - package: ErosKit
+        product: EHDownload
+      - package: ErosKit
+        product: EHReader
+      - package: Nuke
+        product: Nuke
+
+  ErosTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [AppTests]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: proj.eros.swifte.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "6.0"
+    dependencies:
+      - target: Eros
+      # Imported but not linked: the symbols resolve against the host app (BUNDLE_LOADER). Linking it here too
+      # loads a second copy of every EHNetwork class ("Class … is implemented in both").
+      - package: ErosKit
+        product: EHNetwork
+        link: false
+      # Same as EHNetwork: the host app links EHStore (the tag database); a second copy would duplicate GRDB's classes.
+      - package: ErosKit
+        product: EHStore
+        link: false
+      # Same as EHNetwork: the host app links Nuke; a second copy here would duplicate its classes.
+      - package: Nuke
+        product: Nuke
+        link: false
+
+  ErosUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [AppUITests]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: proj.eros.swifte.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "6.0"
+    dependencies:
+      - target: Eros
+
+schemes:
+  Eros:
+    build:
+      targets:
+        Eros: all
+    test:
+      targets:
+        - ErosTests
+        - ErosUITests

@@ -1,0 +1,5 @@
+Set-Cookie: ipb_member_id=1111111; expires=Thu, 31-Dec-2099 23:59:59 GMT; path=/; domain=.e-hentai.org
+Set-Cookie: ipb_pass_hash=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; expires=Thu, 31-Dec-2099 23:59:59 GMT; path=/; domain=.e-hentai.org
+Set-Cookie: ipb_session_id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; path=/; domain=.e-hentai.org
+Set-Cookie: sk=aa1aaa11aaa1a1; expires=Thu, 31-Dec-2099 23:59:59 GMT; path=/; domain=.e-hentai.org
+Set-Cookie: ipb_anonlogin=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.e-hentai.org

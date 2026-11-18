@@ -1,0 +1,991 @@
+{
+  "entries" : [
+    {
+      "derivedFrom" : "structure of local/eh/account/mytags.html (not checked in)",
+      "note" : "Hand-written mytags page after the structure of the private local page; every value is made up: two tag sets (\"Fake Set 1 (2)\", and \"Fake Set 2 (3)\" selected, with a Delete button), the new-tag row usertag_0 and three tags (artist:fake artist watched, weight 10, no color; female:fake tag hidden, #3377CC, weight -5; other:fake tag 3, #AA11FF, weight 25) whose previews carry made-up colors, and the masked apiuid 1111111 and apikey a1a1a1a1a1a1a1a1a1a1. Exempt from tagstyle on purpose.",
+      "path" : "constructed/eh/account-mytags.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "fields of the Flutter api.php use (no fixture)",
+      "note" : "Hand-written `{\"error\":\"Fake error\"}`, the answer every api.php method gives to a failed request. Fields taken from the Flutter app's use of the answer; replace with a real sample after the first real write (with the user's consent, M3/M6).",
+      "path" : "constructed/eh/api-error.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "fields of the Flutter api.php use (no fixture)",
+      "note" : "Hand-written rategallery answer: rating_avg 3.5, rating_usr 4, rating_cnt 12, rating_width 56. Fields taken from the Flutter app's use of the answer; replace with a real sample after the first real write (with the user's consent, M3/M6).",
+      "path" : "constructed/eh/api-rategallery.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "fields of the Flutter api.php use (no fixture)",
+      "note" : "Hand-written setusertag answer `{\"result\":\"ok\"}`; the parser reads only whether it is an error. Fields taken from the Flutter app's use of the answer; replace with a real sample after the first real write (with the user's consent, M3/M6).",
+      "path" : "constructed/eh/api-setusertag.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "fields of the Flutter api.php use (no fixture)",
+      "note" : "Hand-written taggallery answer: a tagpane with two rows, namespaces fakeone and faketwo, one made-up tag each (fake tag 1, fake tag 2). Fields taken from the Flutter app's use of the answer; replace with a real sample after the first real write (with the user's consent, M3/M6).",
+      "path" : "constructed/eh/api-taggallery.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "fields of the Flutter api.php use (no fixture)",
+      "note" : "Hand-written votecomment answer: comment_id 1, comment_score 5, comment_vote 1. Fields taken from the Flutter app's use of the answer; replace with a real sample after the first real write (with the user's consent, M3/M6).",
+      "path" : "constructed/eh/api-votecomment.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "note" : "Hand-written plain-text body of a temporary IP ban for excessive pageloads (no HTML).",
+      "path" : "constructed/eh/banned.txt",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "eh/gallery/detail.html",
+      "note" : "Copy of the gallery page with only the account's marks added: a child div in #fav whose style is background-position:0px -59px (category 3), #favoritelink reading \"Fake Folder 3\", class irr on #rating_image, classes tup and tdn on the first two tag links, and, on the first comment after the uploader's, a styled Vote+ link and an edit_comment link. Exempt from favmark on purpose.",
+      "path" : "constructed/eh/detail-favorited.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "structure of #gdt > div.gdtl in the Flutter gallery_detail_parser.dart (no fixture)",
+      "note" : "Hand-written thumbnail block in the legacy large-thumbnail markup the Flutter parser reads (div.gdtl): four cells of gallery 900001, one made-up image each, whose file names end in -<width>-<height>-jpg_l.jpg (1000x1400, 1100x1500, 1200x1600 and 1300x1700).",
+      "path" : "constructed/eh/detail-thumbs-large.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "structure of #gdt > div.gdtm in the Flutter gallery_detail_parser.dart (no fixture)",
+      "note" : "Hand-written thumbnail block in the legacy small-thumbnail markup the Flutter parser reads (div.gdtm): four cells of gallery 900001 on one made-up sprite sheet, 100px wide and 141-144px high, at offsets 0, 100, 200 and 300px.",
+      "path" : "constructed/eh/detail-thumbs-normal.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "selectors of the Flutter user_profile_parser.dart (no fixture)",
+      "note" : "Hand-written forum profile page after the selectors of the Flutter user_profile_parser.dart: #profilename \"Fake Nickname\", a <br />, then a div whose img has the relative src uploads/av-1111111.jpg.",
+      "path" : "constructed/eh/forum-profile.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "note" : "Hand-written minimal Too Many Requests page.",
+      "path" : "constructed/eh/http-429.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed",
+      "status" : 429
+    },
+    {
+      "derivedFrom" : "eh/image/page.html",
+      "note" : "Copy of the image page with the src of <img id=\"img\"> replaced by https://ehgt.org/g/509.gif (image quota exceeded).",
+      "path" : "constructed/eh/image-509.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "structure of local/eh/list/favorites.html (not checked in)",
+      "note" : "Hand-written favorites.php page in Compact mode after the structure of the private local page; every value is made up: the bar of ten categories, the order control with Favorited selected, five favorited rows (one rated by the account, one with the note placeholder, one expunged) and a next cursor. Exempt from favmark on purpose.",
+      "path" : "constructed/eh/list-favorites.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "eh/list/front.html",
+      "note" : "Copy of the front page (captured with filters disabled) with the \"Filtered N galleries from this page.\" line, N written in its masked form, and its Disable Filters link put back in the search text; no filtered gallery is added. Exempt from filteredlist on purpose.",
+      "path" : "constructed/eh/list-filtered.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "note" : "Hand-written notice the site shows a visitor without a session in place of an account page such as favorites.php or the watched list: one paragraph, \"This page requires you to log on.\", with no gallery list. No real sample was taken; replace it with one when M2 meets the page.",
+      "path" : "constructed/eh/list-login-required.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "eh/list/front.html",
+      "note" : "Copy of the front page with the display mode selector's selected option moved from value=\"l\" (Compact) to value=\"t\" (Thumbnail); the gallery list markup is still Compact.",
+      "path" : "constructed/eh/list-non-compact.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "structure of local/eh/list/watched.html (not checked in)",
+      "note" : "Hand-written watched list page in Compact mode after the structure of the private local page; every value is made up: four rows with uploaders, no previous page and the next cursor 900001.",
+      "path" : "constructed/eh/list-watched.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "note" : "构造样本：论坛账号密码登录的响应头，Flutter `UserLoginTransformer` 读取它们",
+      "path" : "constructed/eh/login-set-cookie.txt",
+      "setCookieNames" : [
+        "ipb_member_id",
+        "ipb_pass_hash",
+        "ipb_session_id",
+        "sk",
+        "ipb_anonlogin"
+      ],
+      "site" : "eh",
+      "source" : "constructed",
+      "status" : 200
+    },
+    {
+      "derivedFrom" : "eh/api/showpage.json",
+      "note" : "Copy of the showpage answer with the img src in i3 replaced by https://ehgt.org/g/509.gif (image quota exceeded); the other fields are unchanged.",
+      "path" : "constructed/eh/showpage-509.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "note" : "Hand-written api.php showpage error answer for a stale or wrong showkey.",
+      "path" : "constructed/eh/showpage-key-mismatch.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "eh/account/uconfig.html",
+      "note" : "Copy of the settings page with only the options of select[name=profile_set] replaced by made-up profiles: 1 \"Fake Default\" (selected), 5 \"Eros-FE\" and 6 \"Fake Other\".",
+      "path" : "constructed/eh/uconfig-eros-unselected.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "derivedFrom" : "eh/account/uconfig.html",
+      "note" : "Copy of the settings page with only the options of select[name=profile_set] replaced by made-up profiles: 1 \"Fake Default\" (selected) and 6 \"Fake Other\"; no Eros-FE profile.",
+      "path" : "constructed/eh/uconfig-without-eros.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "constructed"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:55Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/account/home.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/home.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:54Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/account/uconfig.html",
+      "setCookieNames" : [
+        "hath_perks"
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/uconfig.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:50Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "eh/api/gdata.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:47Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "eh/api/imagedispatch.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:46Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "eh/api/showpage.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:51Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "eh/api/tagsuggest.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:42Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/gallery/detail-p1.html",
+      "setCookieNames" : [
+        "event"
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/g/4088834/930e52d088/?p=1"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:42Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/gallery/detail.html",
+      "setCookieNames" : [
+        "event"
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/g/4088834/930e52d088/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:43Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/gallery/not-found.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/g/1/0000000000/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:45Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/image/page-nl.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/s/bb343652c6/4088834-1?nl=52807-498281"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:44Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/image/page.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/s/bb343652c6/4088834-1"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:31Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/category.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_cats=1021&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:30Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/front-next.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_sft=on&f_sfu=on&f_sfl=on&next=4304848"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:30Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/front-seek.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?seek=2024-01-01&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:30Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/front.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:53Z",
+      "contentType" : "text/plain;charset=UTF-8",
+      "location" : "https://e-hentai.org/?f_shash=b13eca9f4647d5d69ef997acd129cbbd3cd4e37d&fs_from=a.webp",
+      "method" : "POST",
+      "path" : "eh/list/image-lookup-redirect.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 302,
+      "url" : "https://upld.e-hentai.org/image_lookup.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:54Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/image-lookup.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_shash=b13eca9f4647d5d69ef997acd129cbbd3cd4e37d&fs_from=a.webp"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:32Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/popular.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/popular?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:31Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/search-advanced.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_search=language:chinese&advsearch=1&f_sh=on&f_sto=on&f_sr=on&f_srdd=4&f_sp=on&f_spf=20&f_spt=200&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:31Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/search-empty.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_search=eros0fixture0nohit"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:31Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/search.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/?f_search=language:chinese&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:34Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/tag.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/tag/language:chinese?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:40Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/toplist-all.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/toplist.php?tl=11"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:38Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/toplist-month.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/toplist.php?tl=13"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:39Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/toplist-year.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/toplist.php?tl=12"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:41Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/toplist-yesterday-p1.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/toplist.php?tl=15&p=1"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:38Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/toplist-yesterday.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/toplist.php?tl=15"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:34Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/list/uploader.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/uploader/x392?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:46Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/mpv/mpv.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/mpv/4088834/930e52d088/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:50Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/popup/archiver.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/archiver.php?gid=4088834&token=930e52d088"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:48Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/popup/favorites.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/gallerypopups.php?gid=4088834&t=930e52d088&act=addfav"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:02:49Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "eh/popup/torrents.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "eh",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://e-hentai.org/gallerytorrents.php?gid=4088834&t=930e52d088"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:04:02Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/account/uconfig.html",
+      "setCookieNames" : [
+        "hath_perks"
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/uconfig.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:58Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "ex/api/gdata.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:55Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "ex/api/imagedispatch.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:54Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "ex/api/showpage.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:59Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "POST",
+      "path" : "ex/api/tagsuggest.json",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/api.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:50Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/gallery/detail-p1.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/g/4088834/930e52d088/?p=1"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:50Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/gallery/detail.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/g/4088834/930e52d088/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:51Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/gallery/not-found.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/g/1/0000000000/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:53Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/image/page-nl.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/s/bb343652c6/4088834-1?nl=52807-498281"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:52Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/image/page.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/s/bb343652c6/4088834-1"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:43Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/category.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_cats=1021&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:42Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/front-next.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_sft=on&f_sfu=on&f_sfl=on&next=4304851"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:42Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/front-seek.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?seek=2024-01-01&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:42Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/front.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:04:01Z",
+      "contentType" : "text/plain;charset=UTF-8",
+      "location" : "https://exhentai.org/?f_shash=b13eca9f4647d5d69ef997acd129cbbd3cd4e37d&fs_from=a.webp",
+      "method" : "POST",
+      "path" : "ex/list/image-lookup-redirect.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 302,
+      "url" : "https://exhentai.org/upld/image_lookup.php"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:04:01Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/image-lookup.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_shash=b13eca9f4647d5d69ef997acd129cbbd3cd4e37d&fs_from=a.webp"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:44Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/popular.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/popular?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:43Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/search-advanced.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_search=language:chinese&advsearch=1&f_sh=on&f_sto=on&f_sr=on&f_srdd=4&f_sp=on&f_spf=20&f_spt=200&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:44Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/search-empty.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_search=eros0fixture0nohit"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:43Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/search.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/?f_search=language:chinese&f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:46Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/tag.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/tag/language:chinese?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:46Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/list/uploader.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/uploader/x392?f_sft=on&f_sfu=on&f_sfl=on"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:54Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/mpv/mpv.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/mpv/4088834/930e52d088/"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:58Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/popup/archiver.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/archiver.php?gid=4088834&token=930e52d088"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:56Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/popup/favorites.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/gallerypopups.php?gid=4088834&t=930e52d088&act=addfav"
+    },
+    {
+      "capturedAt" : "2026-11-04T17:03:57Z",
+      "contentType" : "text/html; charset=UTF-8",
+      "method" : "GET",
+      "path" : "ex/popup/torrents.html",
+      "setCookieNames" : [
+
+      ],
+      "site" : "ex",
+      "source" : "captured",
+      "status" : 200,
+      "url" : "https://exhentai.org/gallerytorrents.php?gid=4088834&t=930e52d088"
+    }
+  ]
+}

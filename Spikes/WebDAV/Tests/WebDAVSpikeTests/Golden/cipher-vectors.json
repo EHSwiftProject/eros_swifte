@@ -1,0 +1,231 @@
+{
+  "generator": "Spikes/WebDAV/golden/bin/generate.dart",
+  "dart": "3.13.7",
+  "packages": {
+    "encrypt": "5.0.3",
+    "pointycastle": "3.9.1"
+  },
+  "construction": "Encrypter(AES(Key.fromUtf8(kAESKey))).encrypt(text, iv: IV.fromUtf8(kAESIV)).base64",
+  "algorithm": "AES/SIC/PKCS7 (AES() default mode is SIC, i.e. CTR)",
+  "key": "fehviewer is very good!!",
+  "iv": "0000000000000000",
+  "vectors": [
+    {
+      "name": "empty",
+      "plaintext": "",
+      "utf8Length": 0,
+      "encryptError": "RangeError: RangeError (start): Invalid value: Only valid value is 0: -16",
+      "paddedBlockCiphertextBase64": "wY9OCnGHl9qpQYLMBS3AJA==",
+      "paddedBlockDecryptsTo": ""
+    },
+    {
+      "name": "ascii",
+      "plaintext": "Hello, WebDAV!",
+      "utf8Length": 14,
+      "ciphertextBase64": "mfoydg67p53cM9adQxzSNg==",
+      "ciphertextLength": 16,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-15",
+      "plaintext": "abcdefghijklmno",
+      "utf8Length": 15,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/NQ==",
+      "ciphertextLength": 16,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-16",
+      "plaintext": "abcdefghijklmnop",
+      "utf8Length": 16,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/RBPVqK9a7AoljhilGLrs8g8=",
+      "ciphertextLength": 32,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-17",
+      "plaintext": "abcdefghijklmnopq",
+      "utf8Length": 17,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/RHLKt7BF8xU6kQe6B6Xz7RA=",
+      "ciphertextLength": 32,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "cjk-utf8-15",
+      "plaintext": "你好世界abc",
+      "utf8Length": 15,
+      "ciphertextBase64": "NSL+/8QqY3IvtgdQdF+zNQ==",
+      "ciphertextLength": 16,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "cjk-utf8-16",
+      "plaintext": "你好世界abcd",
+      "utf8Length": 16,
+      "ciphertextBase64": "NSL+/8QqY3IvtgdQdF+zUBPVqK9a7AoljhilGLrs8g8=",
+      "ciphertextLength": 32,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "cjk-utf8-17",
+      "plaintext": "你好世界abcde",
+      "utf8Length": 17,
+      "ciphertextBase64": "NSL+/8QqY3IvtgdQdF+zUGbKt7BF8xU6kQe6B6Xz7RA=",
+      "ciphertextLength": 32,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-31",
+      "plaintext": "abcdefghijklmnopqrstuvwxyz01234",
+      "utf8Length": 31,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/RHK3y8s/im1N53KFOZjP1h4=",
+      "ciphertextLength": 32,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-32",
+      "plaintext": "abcdefghijklmnopqrstuvwxyz012345",
+      "utf8Length": 32,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/RHK3y8s/im1N53KFOZjP1ip/gHaoaOZcWchaJfgb8xkm",
+      "ciphertextLength": 48,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "ascii-utf8-33",
+      "plaintext": "abcdefghijklmnopqrstuvwxyz0123456",
+      "utf8Length": 33,
+      "ciphertextBase64": "sP09fgTx4KLQO/mweFO/RHK3y8s/im1N53KFOZjP1ipZn2m3d/lDRtdFOucE7AY5",
+      "ciphertextLength": 48,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "cjk-kana-emoji",
+      "plaintext": "中文 日本語のテスト 🍣🔍 👨‍👩‍👧 完了",
+      "utf8Length": 63,
+      "ciphertextBase64": "NSfz/PcQpywu9HRAudV6quBEFlzJevm3J+s2gIoMfZLMYPks9da81kni12iGE5anbSvsNcJCrSul6hj38D9LAQ==",
+      "ciphertextLength": 64,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "json-escapes",
+      "plaintext": "{\"a\":\"quote \\\" backslash \\\\ tab \\t newline \\n\"}\n\ttail",
+      "utf8Length": 53,
+      "ciphertextBase64": "qr0/OFu19r/WJff8SR/wVmKm08wmnWldvlTpKN6dgD8z5EbWHYEgILYvFbRlwXQ8zb0N0V7WN4eOBL1wH47GCw==",
+      "ciphertextLength": 64,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "long-counter-carry",
+      "plaintext": "0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666777777777777777788888888888888889999999999999999aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccddddddddddddddddeeeeeeeeeeeeeeeeffffffffffffffff0000000000000000111111111111111122222222222222223333333333333333444444444444444455555555555555556666666666666666",
+      "utf8Length": 6000,
+      "ciphertextBase64": "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",
+      "ciphertextLength": 6016,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "history-json",
+      "plaintext": "{\"gid\":\"1000001\",\"token\":\"0000000001\",\"showKey\":null,\"url\":\"https://e-hentai.org/g/1000001/0000000001/\",\"imgUrl\":\"https://ehgt.org/w/00/000/fake-cover-1000001.webp\",\"imgUrlL\":null,\"imgHeight\":300,\"imgWidth\":212,\"japaneseTitle\":\"[示例社团] サンプル画廊 第1巻\",\"englishTitle\":\"[Fake Circle] Sample Gallery Vol.1\",\"category\":\"Doujinshi\",\"uploader\":\"fake-uploader\",\"posted\":\"2025-01-02 03:04\",\"language\":\"Chinese\",\"filecount\":\"24\",\"rating\":4.5,\"ratingCount\":\"12\",\"torrentcount\":\"0\",\"torrents\":[],\"filesize\":null,\"filesizeText\":\"12.34 MiB\",\"visible\":\"Yes\",\"parent\":null,\"parentHref\":null,\"ratingFallBack\":4.5,\"numberOfReviews\":\"3\",\"postTime\":\"1735787040\",\"favoritedCount\":\"5\",\"favTitle\":null,\"favcat\":null,\"localFav\":false,\"simpleTags\":[{\"text\":\"language:chinese\",\"Translat\":\"中文\",\"color\":null,\"backgrondColor\":null},{\"text\":\"other:fake tag\",\"Translat\":\"示例标签 \\\"quoted\\\" \\\\ slash/\",\"color\":\"#ffffff\",\"backgrondColor\":\"#000000\"}],\"tagsFromApi\":[\"language:chinese\",\"other:fake tag\"],\"translated\":null,\"tagGroup\":[],\"galleryComment\":[],\"galleryImages\":[],\"chapter\":[{\"page\":1,\"author\":null,\"title\":\"第一章 Fake\"}],\"apikey\":null,\"apiuid\":null,\"isRatinged\":false,\"colorRating\":null,\"archiverLink\":null,\"torrentLink\":null,\"lastViewTime\":1762000000000,\"pageOfList\":null,\"favNote\":null,\"expunged\":false}",
+      "utf8Length": 1315,
+      "ciphertextBase64": "qr05cwW1veiIYaLsJQ3hFi/nzNAhmXQXpCqFOJrM0i9foFaJWtpuOrAlQqNumisMqrwA1B7/Sf7pLYxZfPG5cAxyzni2q51mWJcoQwB+t4gUi70MbKBQjqE9eI1c7lCVMEbSksg66wSx5LdFQpdwgFmjiwEJAS5awekWAHROZywUx0S6xXz1sLL2/X9txdsG1jjSkdZaZBQybm+FT8ORrgCUNRSeiKMsifEaV9clfqkwkBaRYNubp8pwJYe8ZGU+ThDfIyo3WZUH/jRoFb7J94IwZa/nnJjzW6sbk0qQH7RxK7pUiAkjxUhfvSMBQi7Hs5Bri9SVZKTTf2V9X9Uyo1IPPmoRc7rJda7XDzq/L5LuFfpk0vt531nIHa5OZ7L6VXCectkADc8H85aLB6aHIALZ39W/jRRaXK3BFDB2B+ICNkSnaY1bYW/2xcBsxSsCUQQSQtIT9JZbU1Zmu6IirpCMl35MTC3COdtCFus4V4GOgCLOiOo9QyBlt9r2qcV7/7UQFyJjU3olcIS5it3RBqDLYGP2DCq5majcem7r7ea3lqjsUZE4YZra0ZRKMWlwln2FKI2gu7F7u/I8l598bqYANB6e54eG0TkrHzu14jjvUr2y29RFMzLo+9VeBr83zZIlGjzkaCtFthlKpwSv2z+VmXTj4KGmHcQ60xFSHbQ4kZuKcrIWqNfRJxR1SzLqYLc0cyukdDkUmQZZV3+M2R4kipptxcaZ47f1MrHs9M83e4sv0JBEK/RUA9FVZAadxOFuJsGpsorgWt2R7/fXxVqJdVKZ4Na3RVqmCpg51IvX/Jtef2O+iMH1C+GMuVHwGcpMIF+PFJAECVGI009hkkpbX23lkWokrw/DksfkGuKkxjiO5LoKmjJNTKUYtOdB9MdPcx6z1QCizpgxx1KmjdkHYcxEk9J0KR/0uenRq1oVSyyDVVbVfxiiYr+wwt30S6SrtyO4ZA4N/e0mMSC+2qczgHgP9z7CSqPtmEPVuPH/CFdb1tJBsAY+F+HKzel1XufnB/ylJ2Jqe7Na8ooM7QTbdv+Nj9XjTwKC+bGOZVWFZqZiyN296bPMCxJ5xRtXnKi7eSQvzlnYuUE+h5IfsiESarexZ8MdRL4RxuGUBWrbnjJl9UnHPKUCeXB4TkL4Xa4Jbg7I9KRiX56fSxdpGh1k21Z3x0mlJjxvPdMZu3aK4ohJyKDYPrAFWvLZQg6F0ODhaOjEhbnt6gIDQCZbzuxE9CVjrBpgnugqNc9YUGaSTrmAE/VujPki0gqQgIyVjwVz4c5bGawXCimBBY5ScX+uXmt9f9w3DCSANaY6fvYNSuliOS8bklrmjTNrts5u2vCrx0NjyQa3QfB0qPpzijBbT9/pePgsWtiwcX6IC0XgJaelt7r2pywmHX/y0aRt3blq+46buGItV3nNTnJYPFMLAHh2VC5yl6w4vzAn2nLfNUqP5EtoEkU8zL32puserGXgwxqulIv2Kl7XGqCYyBwjSDE8TKVH414nndCScDs4N8HTEEKpG1D108/9/v+jIPPboK8YO715JZ5nXy0gskvuD99TAJZujkAzdwvZSpAqbitQsb03RuP1xkY0y+NoD1vWi5gxu/sYZZ1JphSB8XcQpTE+MUIgCJblkW7e4COZvQdAYv+NXv9sGdqmS8zCNSWsUOI6zkZJF9Z+zS0o4i7T+c0jQZ1GQsrWUSvGPRmEu2udgA8NulBtUd4HVSFVJtEUbwy48BcfnSs0hB7IEmoUfvrXesD+eR1AKN5GgZU=",
+      "ciphertextLength": 1328,
+      "deterministic": true,
+      "decryptsBack": true
+    },
+    {
+      "name": "read-json",
+      "plaintext": "{\"gid\":\"1000001\",\"lastIndex\":12,\"lastOffset\":null,\"columnModeVal\":\"\",\"time\":1762000050000}",
+      "utf8Length": 90,
+      "ciphertextBase64": "qr05cwW1veiIYaLsJQ3hFi/n1N45iFNb+m3NKpDN0DNN/AfLDLkqL6svQcoxjXxaqOVO212xSeHrQtkfcdOsbF1yw3X/pIFqW4ZrEB8m890L3KINaaBQjqFxUbtq2Gaj",
+      "ciphertextLength": 96,
+      "deterministic": true,
+      "decryptsBack": true
+    }
+  ],
+  "decryptCases": [
+    {
+      "name": "valid",
+      "input": "mfoydg67p53cM9adQxzSNg==",
+      "plaintext": "Hello, WebDAV!",
+      "accepted": true
+    },
+    {
+      "name": "non-canonical-trailing-bits",
+      "input": "mfoydg67p53cM9adQxzSNh==",
+      "accepted": false,
+      "error": "FormatException: FormatException: Invalid encoding before padding (at character 23)"
+    },
+    {
+      "name": "percent-encoded-padding",
+      "input": "mfoydg67p53cM9adQxzSNg%3D%3D",
+      "plaintext": "Hello, WebDAV!",
+      "accepted": true
+    },
+    {
+      "name": "missing-base64-padding",
+      "input": "mfoydg67p53cM9adQxzSNg",
+      "accepted": false,
+      "error": "FormatException: FormatException: Invalid length, must be multiple of four (at character 23)"
+    },
+    {
+      "name": "trailing-newline",
+      "input": "mfoydg67p53cM9adQxzSNg==\n",
+      "accepted": false,
+      "error": "FormatException: FormatException: Invalid padding character (at character 25)"
+    },
+    {
+      "name": "surrounding-spaces",
+      "input": " mfoydg67p53cM9adQxzSNg== ",
+      "accepted": false,
+      "error": "FormatException: FormatException: Invalid character (at character 1)"
+    },
+    {
+      "name": "standard-alphabet-with-plus-and-slash",
+      "input": "4K9+ew3n76vbNOb8ZU+/VmbKt7BF8xU6kQe6B6Xz7RA=",
+      "plaintext": "10 alphabet probe",
+      "accepted": true
+    },
+    {
+      "name": "url-safe-alphabet",
+      "input": "4K9-ew3n76vbNOb8ZU-_VmbKt7BF8xU6kQe6B6Xz7RA=",
+      "plaintext": "10 alphabet probe",
+      "accepted": true
+    },
+    {
+      "name": "not-base64",
+      "input": "this is not base64!",
+      "accepted": false,
+      "error": "FormatException: FormatException: Invalid character (at character 5)"
+    },
+    {
+      "name": "empty-input",
+      "input": "",
+      "accepted": false,
+      "error": "RangeError: RangeError (length): Invalid value: Valid value range is empty: -16"
+    },
+    {
+      "name": "length-not-multiple-of-16",
+      "input": "mfoydg67p53cM9adQxzS",
+      "accepted": false,
+      "error": "ArgumentError: Invalid argument(s): Input data length must be a multiple of cipher's block size"
+    },
+    {
+      "name": "corrupted-padding",
+      "input": "mfoydg67p53cM9adQxzSNw==",
+      "accepted": false,
+      "error": "ArgumentError: Invalid argument(s): Invalid or corrupted pad block"
+    }
+  ]
+}

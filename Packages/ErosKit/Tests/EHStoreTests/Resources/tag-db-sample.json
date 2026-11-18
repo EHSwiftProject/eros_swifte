@@ -1,0 +1,11 @@
+{"head":{"sha":"0000000000000000000000000000000000000000","committer":{"name":"fake","when":"2026-01-01T00:00:00Z"}},
+ "version":6,"repo":"https://example.invalid/fake-database.git",
+ "data":[
+  {"namespace":"rows","count":2,"data":{"female":{"name":"女性","intro":"","links":""},"other":{"name":"其他","intro":"","links":""}}},
+  {"namespace":"female","count":3,"data":{
+    "shared":{"name":"共享（女性）","intro":"","links":""},
+    "fake tag":{"name":"示例标签","intro":"示例介绍，参见 `other:fake other` 与 `missing tag`。","links":""},
+    "fake long":{"name":"![图](https://example.invalid/a.png) 长示例","intro":"","links":"[链接](https://example.invalid/)"}}},
+  {"namespace":"other","count":2,"data":{"shared":{"name":"共享（其他）","intro":"","links":""},"fake other":{"name":"其他示例","intro":"","links":""}}},
+  {"namespace":"cosplayer","count":1,"data":{"fake cosplayer":{"name":"示例扮演者"}}}
+ ]}

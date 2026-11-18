@@ -1,0 +1,365 @@
+{
+  "generator": "Spikes/WebDAV/golden/bin/generate.dart",
+  "note": "All values are fabricated; gid 1000001+ and zero UUIDs are placeholders.",
+  "files": [
+    {
+      "remotePath": "/fehviewer/history/s/1000001_1762000000000.json",
+      "size": 1772,
+      "kind": "history",
+      "encrypted": true,
+      "parsedName": {
+        "g": "1000001",
+        "t": 1762000000000
+      },
+      "json": {
+        "gid": "1000001",
+        "token": "0000000001",
+        "showKey": null,
+        "url": "https://e-hentai.org/g/1000001/0000000001/",
+        "imgUrl": "https://ehgt.org/w/00/000/fake-cover-1000001.webp",
+        "imgUrlL": null,
+        "imgHeight": 300,
+        "imgWidth": 212,
+        "japaneseTitle": "[示例社团] サンプル画廊 第1巻",
+        "englishTitle": "[Fake Circle] Sample Gallery Vol.1",
+        "category": "Doujinshi",
+        "uploader": "fake-uploader",
+        "posted": "2025-01-02 03:04",
+        "language": "Chinese",
+        "filecount": "24",
+        "rating": 4.5,
+        "ratingCount": "12",
+        "torrentcount": "0",
+        "torrents": [],
+        "filesize": null,
+        "filesizeText": "12.34 MiB",
+        "visible": "Yes",
+        "parent": null,
+        "parentHref": null,
+        "ratingFallBack": 4.5,
+        "numberOfReviews": "3",
+        "postTime": "1735787040",
+        "favoritedCount": "5",
+        "favTitle": null,
+        "favcat": null,
+        "localFav": false,
+        "simpleTags": [
+          {
+            "text": "language:chinese",
+            "Translat": "中文",
+            "color": null,
+            "backgrondColor": null
+          },
+          {
+            "text": "other:fake tag",
+            "Translat": "示例标签 \"quoted\" \\ slash/",
+            "color": "#ffffff",
+            "backgrondColor": "#000000"
+          }
+        ],
+        "tagsFromApi": [
+          "language:chinese",
+          "other:fake tag"
+        ],
+        "translated": null,
+        "tagGroup": [],
+        "galleryComment": [],
+        "galleryImages": [],
+        "chapter": [
+          {
+            "page": 1,
+            "author": null,
+            "title": "第一章 Fake"
+          }
+        ],
+        "apikey": null,
+        "apiuid": null,
+        "isRatinged": false,
+        "colorRating": null,
+        "archiverLink": null,
+        "torrentLink": null,
+        "lastViewTime": 1762000000000,
+        "pageOfList": null,
+        "favNote": null,
+        "expunged": false
+      }
+    },
+    {
+      "remotePath": "/fehviewer/history/s/1000002_1762000100000.json",
+      "size": 1728,
+      "kind": "history",
+      "encrypted": true,
+      "parsedName": {
+        "g": "1000002",
+        "t": 1762000100000
+      },
+      "json": {
+        "gid": "1000002",
+        "token": "0000000002",
+        "showKey": null,
+        "url": "https://e-hentai.org/g/1000002/0000000002/",
+        "imgUrl": "https://ehgt.org/w/00/000/fake-cover-1000002.webp",
+        "imgUrlL": null,
+        "imgHeight": 300,
+        "imgWidth": 212,
+        "japaneseTitle": "フェイク合同誌 🍣",
+        "englishTitle": "Fake Anthology 🍣 Edition",
+        "category": "Doujinshi",
+        "uploader": "fake-uploader",
+        "posted": "2025-01-02 03:04",
+        "language": "Chinese",
+        "filecount": "24",
+        "rating": 4.0,
+        "ratingCount": "12",
+        "torrentcount": "0",
+        "torrents": [],
+        "filesize": null,
+        "filesizeText": "12.34 MiB",
+        "visible": "Yes",
+        "parent": null,
+        "parentHref": null,
+        "ratingFallBack": 4.0,
+        "numberOfReviews": "3",
+        "postTime": "1735787040",
+        "favoritedCount": "5",
+        "favTitle": null,
+        "favcat": null,
+        "localFav": false,
+        "simpleTags": [
+          {
+            "text": "language:chinese",
+            "Translat": "中文",
+            "color": null,
+            "backgrondColor": null
+          },
+          {
+            "text": "other:fake tag",
+            "Translat": "示例标签 \"quoted\" \\ slash/",
+            "color": "#ffffff",
+            "backgrondColor": "#000000"
+          }
+        ],
+        "tagsFromApi": [
+          "language:chinese",
+          "other:fake tag"
+        ],
+        "translated": null,
+        "tagGroup": [],
+        "galleryComment": [],
+        "galleryImages": [],
+        "chapter": [
+          {
+            "page": 1,
+            "author": null,
+            "title": "第一章 Fake"
+          }
+        ],
+        "apikey": null,
+        "apiuid": null,
+        "isRatinged": false,
+        "colorRating": null,
+        "archiverLink": null,
+        "torrentLink": null,
+        "lastViewTime": 1762000100000,
+        "pageOfList": null,
+        "favNote": null,
+        "expunged": false
+      }
+    },
+    {
+      "remotePath": "/fehviewer/history/s/1000004_1629000000000.json",
+      "size": 1052,
+      "kind": "history",
+      "encrypted": false,
+      "note": "pre-AES GalleryItem shape, plain JSON (before 690502e2)",
+      "parsedName": {
+        "g": "1000004",
+        "t": 1629000000000
+      },
+      "json": {
+        "gid": "1000004",
+        "token": "0000000004",
+        "showKey": null,
+        "url": "https://e-hentai.org/g/1000004/0000000004/",
+        "imgUrl": "https://ehgt.org/w/00/000/fake-cover-1000004.jpg",
+        "imgUrlL": null,
+        "imgHeight": 300.0,
+        "imgWidth": 212.0,
+        "japaneseTitle": "[示例] 2021年の古い履歴",
+        "englishTitle": "[Fake] Pre-AES History Entry",
+        "category": "Manga",
+        "uploader": "fake-uploader",
+        "posted": "2021-08-01 12:34",
+        "language": "Japanese",
+        "filecount": "18",
+        "rating": 3.5,
+        "ratingCount": "7",
+        "torrentcount": "0",
+        "torrents": [],
+        "filesize": null,
+        "filesizeText": "8.76 MiB",
+        "visible": "Yes",
+        "parent": null,
+        "ratingFallBack": 3.5,
+        "numberOfReviews": "1",
+        "postTime": "1627821240",
+        "favoritedCount": "2",
+        "favTitle": null,
+        "favcat": null,
+        "localFav": false,
+        "simpleTags": [
+          {
+            "text": "language:japanese",
+            "Translat": "日语",
+            "color": null,
+            "backgrondColor": null
+          }
+        ],
+        "tagsFromApi": [
+          "language:japanese"
+        ],
+        "translated": null,
+        "tagGroup": [],
+        "galleryComment": [],
+        "galleryImages": [],
+        "apikey": null,
+        "apiuid": null,
+        "isRatinged": false,
+        "colorRating": null,
+        "archiverLink": null,
+        "torrentLink": null,
+        "lastViewTime": 1629000000000,
+        "pageOfList": null
+      }
+    },
+    {
+      "remotePath": "/fehviewer/history/del/1000003",
+      "size": 0,
+      "kind": "historyDeletion",
+      "parsedName": "1000003"
+    },
+    {
+      "remotePath": "/fehviewer/read/1000001.json",
+      "size": 128,
+      "kind": "readProgress",
+      "encrypted": true,
+      "parsedName": "1000001",
+      "json": {
+        "gid": "1000001",
+        "lastIndex": 12,
+        "lastOffset": null,
+        "columnModeVal": "",
+        "time": 1762000050000
+      }
+    },
+    {
+      "remotePath": "/fehviewer/read/1000002.json",
+      "size": 128,
+      "kind": "readProgress",
+      "encrypted": true,
+      "parsedName": "1000002",
+      "json": {
+        "gid": "1000002",
+        "lastIndex": 0,
+        "lastOffset": 1536.5,
+        "columnModeVal": "",
+        "time": 1762000150000
+      }
+    },
+    {
+      "remotePath": "/fehviewer/read/1000004.json",
+      "size": 89,
+      "kind": "readProgress",
+      "encrypted": false,
+      "note": "pre-AES plain JSON (before 690502e2)",
+      "parsedName": "1000004",
+      "json": {
+        "gid": "1000004",
+        "lastIndex": 5,
+        "lastOffset": null,
+        "columnModeVal": "",
+        "time": 1629000050000
+      }
+    },
+    {
+      "remotePath": "/fehviewer/group/汉语‖@‖00000000-0000-4000-8000-000000000001‖@‖1762000200000.json",
+      "size": 304,
+      "kind": "group",
+      "encrypted": false,
+      "parsedName": {
+        "name": "汉语",
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "lastEditTime": 1762000200000
+      },
+      "json": {
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "name": "汉语",
+        "searchText": [
+          "l:chinese"
+        ],
+        "listTypeValue": "gallery",
+        "catsTypeValue": null,
+        "cats": 0,
+        "enableAdvance": false,
+        "advSearchTypeValue": null,
+        "advSearch": null,
+        "listModeValue": "global",
+        "hideTab": false,
+        "aggregateGroups": null,
+        "lastEditTime": 1762000200000
+      }
+    },
+    {
+      "remotePath": "/fehviewer/group/Fake Artist [Test] & 同人+‖@‖00000000-0000-4000-8000-000000000002‖@‖1762000210000.json",
+      "size": 832,
+      "kind": "group",
+      "encrypted": true,
+      "parsedName": {
+        "name": "Fake Artist [Test] & 同人+",
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "lastEditTime": 1762000210000
+      },
+      "json": {
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "name": "Fake Artist [Test] & 同人+",
+        "searchText": [
+          "artist:\"fake artist$\"",
+          "other:\"fake tag$\""
+        ],
+        "listTypeValue": "gallery",
+        "catsTypeValue": null,
+        "cats": 0,
+        "enableAdvance": true,
+        "advSearchTypeValue": null,
+        "advSearch": {
+          "requireGalleryTorrent": false,
+          "browseExpungedGalleries": false,
+          "searchWithMinRating": true,
+          "minRating": 3,
+          "searchBetweenPage": false,
+          "startPage": "",
+          "endPage": "",
+          "disableCustomFilterLanguage": false,
+          "disableCustomFilterUploader": false,
+          "disableCustomFilterTags": false
+        },
+        "listModeValue": "global",
+        "hideTab": false,
+        "aggregateGroups": null,
+        "lastEditTime": 1762000210000
+      }
+    },
+    {
+      "remotePath": "/fehviewer/search/quickSearch_1762000300000.txt",
+      "size": 50,
+      "kind": "quickSearch",
+      "encrypted": false,
+      "parsedName": 1762000300000,
+      "lines": [
+        "l:chinese$",
+        "other:\"fake tag$\"",
+        "示例 検索 🔍"
+      ]
+    }
+  ]
+}

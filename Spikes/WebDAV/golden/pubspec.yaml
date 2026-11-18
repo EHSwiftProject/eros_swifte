@@ -1,0 +1,27 @@
+# Minimal Dart project that produces the WebDAV golden data with the exact
+# libraries the frozen Flutter app (eros_fe 1.9.3+567) ships. Spike only:
+# M7 deletes this directory together with Spikes/WebDAV.
+#
+# Versions are pinned to the Flutter app's pubspec.lock so the output matches
+# what the app really writes and reads.
+name: eros_webdav_golden
+description: Golden data and a legacy-client simulator for the Eros WebDAV spike.
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  encrypt: 5.0.3
+  pointycastle: 3.9.1
+  webdav_client: 1.2.2
+  dio: 5.9.0
+  xml: 6.6.1
+  collection: 1.19.1
+
+# Transitive packages pinned to the Flutter app's pubspec.lock as well.
+dependency_overrides:
+  asn1lib: 1.6.5
+  clock: 1.1.2
+  crypto: 3.0.6
+  petitparser: 7.0.1

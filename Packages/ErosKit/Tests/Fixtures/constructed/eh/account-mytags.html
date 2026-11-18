@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fake Title</title>
+</head>
+<body>
+<div class="stuffbox" id="outer">
+<script type="text/javascript">
+var api_url = "https://api.e-hentai.org/api.php";
+var apiuid = 1111111;
+var apikey = "a1a1a1a1a1a1a1a1a1a1";
+</script>
+<form id="tagset_form" action="" method="post">
+<div id="tagset_outer">
+<div><input type="button" onclick="do_tagset_rename()" value="Fake" /> <input type="button" onclick="do_tagset_delete()" value="Fake" /></div>
+<div>
+<input type="hidden" id="tagset_action" name="tagset_action" value="" />
+<input type="hidden" id="tagset_name" name="tagset_name" value="" />
+<select onchange="change_tagset(this.value)">
+<option value="9100001">Fake Set 1 (2)</option>
+<option value="9100002" selected="selected">Fake Set 2 (3)</option>
+</select>
+</div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" name="fake_enable" id="tagset_enable" checked="checked" /><span></span> Fake</label></div>
+<div><button id="colorsetter" class="jscolor" tabindex="-1"></button></div>
+<div><input type="text" name="fake_color" id="tagcolor" value="" placeholder="#000000" size="7" maxlength="7" autocomplete="off" title="Fake tip" /></div>
+<div><input type="button" id="tagsave" onclick="fake_tagset_save()" value="Fake" disabled="disabled" /></div>
+<div></div>
+</div>
+</form>
+<form id="usertag_form" action="" method="post">
+<input type="hidden" id="usertag_action" name="usertag_action" value="" />
+<div id="usertags_outer">
+<div id="usertag_0">
+<div><div class="tagcomplete"><input type="text" id="tagname_new" name="tagname_new" value="" placeholder="Fake tip" size="40" maxlength="200" autocomplete="off" /></div></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="tagwatch_0" name="tagwatch_new" /><span></span> Fake</label></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="taghide_0" name="taghide_new" /><span></span> Fake</label></div>
+<div><button id="colorsetter_0" class="jscolor" tabindex="-1"></button></div>
+<div><input type="text" id="tagcolor_0" name="tagcolor_new" class="tagcolor" value="" placeholder="#000000" size="7" maxlength="7" autocomplete="off" title="Fake tip" /></div>
+<div><input type="text" id="tagweight_0" name="tagweight_new" value="10" placeholder="10" size="4" maxlength="4" title="Fake tip" /></div>
+<div><input type="submit" id="tagsave_0" value="Fake" disabled="disabled" /></div>
+</div>
+<div id="usertag_9000001">
+<div><a href="https://e-hentai.org/tag/artist:fake+artist"><div id="tagpreview_9000001" class="gt" title="artist:fake artist" style="color:#f1f1f1;border-color:#111111;background:radial-gradient(#222222,#333333) !important">fake artist</div></a></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="tagwatch_9000001" checked="checked" /><span></span> Fake</label></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="taghide_9000001" /><span></span> Fake</label></div>
+<div><button id="colorsetter_9000001" class="jscolor" tabindex="-1"></button></div>
+<div><input type="text" id="tagcolor_9000001" class="tagcolor" value="" placeholder="#000000" size="7" maxlength="7" autocomplete="off" title="Fake tip" /></div>
+<div><input type="text" id="tagweight_9000001" value="10" placeholder="10" size="4" maxlength="4" title="Fake tip" /></div>
+<div id="selector_9000001"><label class="lc"><input type="checkbox" name="fake_usertags[]" value="9000001" /><span></span></label></div>
+</div>
+<div id="usertag_9000002">
+<div><a href="https://e-hentai.org/tag/female:fake+tag"><div id="tagpreview_9000002" class="gt" title="female:fake tag" style="color:#f1f1f1;border-color:#3377CC;background:radial-gradient(#3377CC,#3377CC) !important">fake tag</div></a></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="tagwatch_9000002" /><span></span> Fake</label></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="taghide_9000002" checked="checked" /><span></span> Fake</label></div>
+<div><button id="colorsetter_9000002" class="jscolor" tabindex="-1"></button></div>
+<div><input type="text" id="tagcolor_9000002" class="tagcolor" value="#3377CC" placeholder="#000000" size="7" maxlength="7" autocomplete="off" title="Fake tip" /></div>
+<div><input type="text" id="tagweight_9000002" value="-5" placeholder="10" size="4" maxlength="4" title="Fake tip" /></div>
+<div id="selector_9000002"><label class="lc"><input type="checkbox" name="fake_usertags[]" value="9000002" /><span></span></label></div>
+</div>
+<div id="usertag_9000003">
+<div><a href="https://e-hentai.org/tag/other:fake+tag+3"><div id="tagpreview_9000003" class="gt" title="other:fake tag 3" style="color:#f1f1f1;border-color:#AA11FF;background:radial-gradient(#AA11FF,#AA11FF) !important">fake tag 3</div></a></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="tagwatch_9000003" /><span></span> Fake</label></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" id="taghide_9000003" /><span></span> Fake</label></div>
+<div><button id="colorsetter_9000003" class="jscolor" tabindex="-1"></button></div>
+<div><input type="text" id="tagcolor_9000003" class="tagcolor" value="#AA11FF" placeholder="#000000" size="7" maxlength="7" autocomplete="off" title="Fake tip" /></div>
+<div><input type="text" id="tagweight_9000003" value="25" placeholder="10" size="4" maxlength="4" title="Fake tip" /></div>
+<div id="selector_9000003"><label class="lc"><input type="checkbox" name="fake_usertags[]" value="9000003" /><span></span></label></div>
+</div>
+</div>
+<div id="usertags_mass">
+<div>Fake:</div>
+<div><select id="usertag_target" name="usertag_target"><option value="0" selected="selected">Fake</option></select></div>
+<div><input id="usertags_button" type="button" onclick="fake_usertags_mass()" value="Fake" /></div>
+<div><label class="lc" title="Fake tip"><input type="checkbox" /><span></span></label></div>
+</div>
+</form>
+</div>
+</body>
+</html>

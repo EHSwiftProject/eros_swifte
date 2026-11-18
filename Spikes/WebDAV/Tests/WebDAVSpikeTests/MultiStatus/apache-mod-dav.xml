@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D:multistatus xmlns:D="DAV:" xmlns:ns0="DAV:">
+<D:response xmlns:lp1="DAV:" xmlns:lp2="http://apache.org/dav/props/" xmlns:g0="DAV:">
+<D:href>/dav/legacy-write/fehviewer/group/</D:href>
+<D:propstat>
+<D:prop>
+<lp1:resourcetype><D:collection/></lp1:resourcetype>
+<D:getcontenttype>httpd/unix-directory</D:getcontenttype>
+<lp1:getetag>"80-65f68a03f3b80"</lp1:getetag>
+<lp1:getlastmodified>Wed, 04 Nov 2026 00:40:30 GMT</lp1:getlastmodified>
+</D:prop>
+<D:status>HTTP/1.1 200 OK</D:status>
+</D:propstat>
+<D:propstat>
+<D:prop>
+<g0:displayname/>
+<g0:getcontentlength/>
+</D:prop>
+<D:status>HTTP/1.1 404 Not Found</D:status>
+</D:propstat>
+</D:response>
+<D:response xmlns:lp1="DAV:" xmlns:lp2="http://apache.org/dav/props/" xmlns:g0="DAV:">
+<D:href>/dav/legacy-write/fehviewer/group/%e6%b1%89%e8%af%ad%e2%80%96@%e2%80%9600000000-0000-4000-8000-000000000001%e2%80%96@%e2%80%961762000200000.json</D:href>
+<D:propstat>
+<D:prop>
+<lp1:resourcetype/>
+<lp1:getcontentlength>304</lp1:getcontentlength>
+<D:getcontenttype>application/json</D:getcontenttype>
+<lp1:getetag>"130-65f68a03f3b80"</lp1:getetag>
+<lp1:getlastmodified>Wed, 04 Nov 2026 00:40:30 GMT</lp1:getlastmodified>
+</D:prop>
+<D:status>HTTP/1.1 200 OK</D:status>
+</D:propstat>
+<D:propstat>
+<D:prop>
+<g0:displayname/>
+</D:prop>
+<D:status>HTTP/1.1 404 Not Found</D:status>
+</D:propstat>
+</D:response>
+<D:response xmlns:lp1="DAV:" xmlns:lp2="http://apache.org/dav/props/" xmlns:g0="DAV:">
+<D:href>/dav/legacy-write/fehviewer/group/Fake%20Artist%20%5bTest%5d%20&amp;%20%e5%90%8c%e4%ba%ba+%e2%80%96@%e2%80%9600000000-0000-4000-8000-000000000002%e2%80%96@%e2%80%961762000210000.json</D:href>
+<D:propstat>
+<D:prop>
+<lp1:resourcetype/>
+<lp1:getcontentlength>832</lp1:getcontentlength>
+<D:getcontenttype>application/json</D:getcontenttype>
+<lp1:getetag>"340-65f68a03f3b80"</lp1:getetag>
+<lp1:getlastmodified>Wed, 04 Nov 2026 00:40:30 GMT</lp1:getlastmodified>
+</D:prop>
+<D:status>HTTP/1.1 200 OK</D:status>
+</D:propstat>
+<D:propstat>
+<D:prop>
+<g0:displayname/>
+</D:prop>
+<D:status>HTTP/1.1 404 Not Found</D:status>
+</D:propstat>
+</D:response>
+</D:multistatus>

@@ -1,0 +1,5 @@
+// Shared build settings for the Eros app target.
+// Release IPAs are built unsigned, see docs/packaging.md.
+// The simulator's ad-hoc signing identity is set in project.yml (targets.Eros.settings), not here: XcodeGen's
+// target-level preset would override a value set in this file.
+CODE_SIGN_STYLE = Automatic

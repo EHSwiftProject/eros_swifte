@@ -1,0 +1,20 @@
+Eros-SE
+Copyright 2026 The Eros-SE Authors
+
+This product is a native Swift rewrite of Eros-FE
+(https://github.com/erosTeam/eros_fe), copyright honjow and the Eros-FE
+contributors, licensed under the Apache License, Version 2.0. Its features,
+user flows and rules for reading the E-Hentai and ExHentai sites follow
+Eros-FE; the code is newly written in Swift.
+
+This product uses the following open-source libraries, each under the MIT
+License:
+
+  Nuke         https://github.com/kean/Nuke
+  SwiftSoup    https://github.com/scinfu/SwiftSoup
+  GRDB.swift   https://github.com/groue/GRDB.swift
+
+At run time the app downloads tag translations from EhTagTranslation/Database
+(https://github.com/EhTagTranslation/Database), licensed under the Creative
+Commons Attribution-NonCommercial-ShareAlike 3.0 license. That data is not
+part of this product's source.

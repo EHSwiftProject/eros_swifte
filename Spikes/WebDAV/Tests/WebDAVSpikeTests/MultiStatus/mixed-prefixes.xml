@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written sample. Mixes the D: and d: prefixes and a default namespace,
+     all bound to DAV:, plus a foreign namespace, in the style of
+     Nextcloud/SabreDAV and IIS responses. Hrefs are relative and partly
+     unencoded (raw UTF-8), which some servers emit. -->
+<d:multistatus xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns" xmlns:oc="http://owncloud.org/ns">
+  <d:response>
+    <d:href>/remote.php/dav/files/fake-user/fehviewer/history/s/</d:href>
+    <d:propstat>
+      <d:prop>
+        <d:resourcetype><d:collection/></d:resourcetype>
+        <d:getlastmodified>Tue, 04 Nov 2025 01:02:03 GMT</d:getlastmodified>
+        <d:getetag>&quot;6908f2bb5c1e1&quot;</d:getetag>
+      </d:prop>
+      <d:status>HTTP/1.1 200 OK</d:status>
+    </d:propstat>
+    <d:propstat>
+      <d:prop><d:getcontentlength/><d:getcontenttype/></d:prop>
+      <d:status>HTTP/1.1 404 Not Found</d:status>
+    </d:propstat>
+  </d:response>
+  <D:response xmlns:D="DAV:">
+    <D:href>/remote.php/dav/files/fake-user/fehviewer/history/s/1000001_1762000000000.json</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:resourcetype/>
+        <D:getcontentlength>1772</D:getcontentlength>
+        <D:getcontenttype>application/json</D:getcontenttype>
+        <D:getlastmodified>Tue, 04 Nov 2025 01:02:03 GMT</D:getlastmodified>
+        <D:getetag>"0123456789abcdef"</D:getetag>
+        <oc:fileid>42</oc:fileid>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+  <response xmlns="DAV:">
+    <href>/remote.php/dav/files/fake-user/fehviewer/history/s/1000002_1762000100000.json</href>
+    <propstat>
+      <prop>
+        <resourcetype></resourcetype>
+        <getcontentlength>1728</getcontentlength>
+        <getlastmodified>Wed, 05 Nov 2025 10:20:30 GMT</getlastmodified>
+      </prop>
+      <status>HTTP/1.1 200 OK</status>
+    </propstat>
+  </response>
+  <d:response>
+    <d:href>/remote.php/dav/files/fake-user/fehviewer/history/s/示例 目录/</d:href>
+    <d:propstat>
+      <d:prop>
+        <D:resourcetype xmlns:D="DAV:"><D:collection/></D:resourcetype>
+      </d:prop>
+      <d:status>HTTP/1.1 200 OK</d:status>
+    </d:propstat>
+  </d:response>
+</d:multistatus>

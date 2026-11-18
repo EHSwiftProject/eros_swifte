@@ -1,0 +1,4 @@
+l:chinese$
+other:"fake tag$"
+示例 検索 🔍
+  

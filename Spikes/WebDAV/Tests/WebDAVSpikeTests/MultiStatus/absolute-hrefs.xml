@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hand-written sample. Hrefs are absolute URLs with a port and upper-case
+     percent-encoding of Chinese path segments (the base directory is
+     "我的坚果云", "my Nutstore"), as some servers return them. The
+     directory itself is not the first response. -->
+<D:multistatus xmlns:D="DAV:">
+  <D:response>
+    <D:href>https://dav.example.com:8443/dav/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/fehviewer/group/%E6%B1%89%E8%AF%AD%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000001%E2%80%96@%E2%80%961762000200000.json</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:resourcetype/>
+        <D:getcontentlength>304</D:getcontentlength>
+        <D:getlastmodified>Thu, 06 Nov 2025 08:09:10 GMT</D:getlastmodified>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+  <D:response>
+    <D:href>https://dav.example.com:8443/dav/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/fehviewer/group/</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:resourcetype><D:collection/></D:resourcetype>
+        <D:getlastmodified>Thu, 06 Nov 2025 08:09:10 GMT</D:getlastmodified>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+  <D:response>
+    <D:href>https://dav.example.com:8443/dav/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/fehviewer/group/Fake%20Artist%20%5BTest%5D%20&amp;%20%E5%90%8C%E4%BA%BA+%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000002%E2%80%96@%E2%80%961762000210000.json</D:href>
+    <D:propstat>
+      <D:prop>
+        <D:resourcetype/>
+        <D:getcontentlength>832</D:getcontentlength>
+      </D:prop>
+      <D:status>HTTP/1.1 200 OK</D:status>
+    </D:propstat>
+  </D:response>
+</D:multistatus>

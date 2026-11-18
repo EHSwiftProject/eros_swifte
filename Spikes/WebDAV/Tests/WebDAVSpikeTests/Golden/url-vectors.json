@@ -1,0 +1,108 @@
+{
+  "generator": "Spikes/WebDAV/golden/bin/generate.dart",
+  "packages": {
+    "webdav_client": "1.2.2",
+    "dio": "5.9.0"
+  },
+  "baseURL": "http://127.0.0.1:18080/dav/",
+  "vectors": [
+    {
+      "remotePath": "/fehviewer/history/s/",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/history/s/",
+      "requestTarget": "/dav/fehviewer/history/s/",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/history/s/"
+    },
+    {
+      "remotePath": "/fehviewer/history/s/1000001_1762000000000.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/history/s/1000001_1762000000000.json",
+      "requestTarget": "/dav/fehviewer/history/s/1000001_1762000000000.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/history/s/1000001_1762000000000.json"
+    },
+    {
+      "remotePath": "/fehviewer/history/del/1000003",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/history/del/1000003",
+      "requestTarget": "/dav/fehviewer/history/del/1000003",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/history/del/1000003"
+    },
+    {
+      "remotePath": "/fehviewer/read/1000001.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/read/1000001.json",
+      "requestTarget": "/dav/fehviewer/read/1000001.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/read/1000001.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/汉语‖@‖00000000-0000-4000-8000-000000000001‖@‖1762000200000.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/%E6%B1%89%E8%AF%AD%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000001%E2%80%96@%E2%80%961762000200000.json",
+      "requestTarget": "/dav/fehviewer/group/%E6%B1%89%E8%AF%AD%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000001%E2%80%96@%E2%80%961762000200000.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/汉语‖@‖00000000-0000-4000-8000-000000000001‖@‖1762000200000.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/Fake Artist [Test] & 同人+‖@‖00000000-0000-4000-8000-000000000002‖@‖1762000210000.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/Fake%20Artist%20%5BTest%5D%20&%20%E5%90%8C%E4%BA%BA+%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000002%E2%80%96@%E2%80%961762000210000.json",
+      "requestTarget": "/dav/fehviewer/group/Fake%20Artist%20%5BTest%5D%20&%20%E5%90%8C%E4%BA%BA+%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000002%E2%80%96@%E2%80%961762000210000.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/Fake Artist [Test] & 同人+‖@‖00000000-0000-4000-8000-000000000002‖@‖1762000210000.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/100% fake‖@‖00000000-0000-4000-8000-000000000003‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/100%25%20fake%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000003%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/100%25%20fake%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000003%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/100% fake‖@‖00000000-0000-4000-8000-000000000003‖@‖1.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/C#‖@‖00000000-0000-4000-8000-000000000004‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/C#%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000004%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/C",
+      "fragmentDropped": true,
+      "decodedPath": "/dav/fehviewer/group/C"
+    },
+    {
+      "remotePath": "/fehviewer/group/why?‖@‖00000000-0000-4000-8000-000000000005‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/why?%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000005%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/why?%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000005%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/why"
+    },
+    {
+      "remotePath": "/fehviewer/group/サンプル ｶﾅ‖@‖00000000-0000-4000-8000-000000000006‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%20%EF%BD%B6%EF%BE%85%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000006%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%20%EF%BD%B6%EF%BE%85%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000006%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/サンプル ｶﾅ‖@‖00000000-0000-4000-8000-000000000006‖@‖1.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/a%41b‖@‖00000000-0000-4000-8000-000000000007‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/aAb%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000007%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/aAb%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000007%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/aAb‖@‖00000000-0000-4000-8000-000000000007‖@‖1.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/x%e5%90%8Cy‖@‖00000000-0000-4000-8000-000000000008‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/x%E5%90%8Cy%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000008%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/x%E5%90%8Cy%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000008%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/x同y‖@‖00000000-0000-4000-8000-000000000008‖@‖1.json"
+    },
+    {
+      "remotePath": "/fehviewer/group/a\\b‖@‖00000000-0000-4000-8000-000000000009‖@‖1.json",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/group/a/b%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000009%E2%80%96@%E2%80%961.json",
+      "requestTarget": "/dav/fehviewer/group/a/b%E2%80%96@%E2%80%9600000000-0000-4000-8000-000000000009%E2%80%96@%E2%80%961.json",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/group/a/b‖@‖00000000-0000-4000-8000-000000000009‖@‖1.json"
+    },
+    {
+      "remotePath": "/fehviewer/search/quickSearch_1762000300000.txt",
+      "url": "http://127.0.0.1:18080/dav/fehviewer/search/quickSearch_1762000300000.txt",
+      "requestTarget": "/dav/fehviewer/search/quickSearch_1762000300000.txt",
+      "fragmentDropped": false,
+      "decodedPath": "/dav/fehviewer/search/quickSearch_1762000300000.txt"
+    }
+  ]
+}
